@@ -1,0 +1,29 @@
+:root {
+  --primary-text-color: #555555;
+  --primary-accent-color: #303030;
+  --another-tittle-color: #ffffff;
+  --special-color: #9da4bd;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+} */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
