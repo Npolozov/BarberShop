@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container main-nav">
         <a href="" class="header-logo">
           <img src="./img/logo.svg" alt="лого сайта" />
         </a>
@@ -36,7 +36,7 @@
     </header>
     <main>
       <section id="about">
-        <div class="container">
+        <div class="container flex-hero">
           <ul class="social-list list">
             <li class="social-link">
               <a href="" target="_blank" rel="noopener nofollow noreferrer" class="social-link"
@@ -49,40 +49,39 @@
               >
             </li>
           </ul>
-          <p lang="en" class="hero-salon">A hair salon for men in Kyiv</p>
-          <h1 lang="en" class="hero-title">BarberShop</h1>
-          <p class="hero-paragraf">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-          </p>
+          <div class="hero-content">
+            <p lang="en" class="hero-salon">A hair salon for men in Kyiv</p>
+            <h1 lang="en" class="hero-title">BarberShop</h1>
+            <p class="hero-paragraf">
+              Мы эксперты в модных мужских стрижках. <br />Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
         </div>
       </section>
       <section>
-        <div class="container">
+        <div class="container flex-photo-list">
           <ul class="photo-list list">
             <li class="photo-item">
-              <img src="./img/about-img-1.jpeg" alt="барбер бреет шею" width="270" height="445" />
+              <img src="./img/about-img-1.jpeg" alt="барбер бреет шею" width="270" />
             </li>
             <li class="photo-item">
-              <img
-                src="./img/about-img-2.jpeg"
-                alt="барбер делает кантик"
-                width="270"
-                height="445"
-              />
+              <img src="./img/about-img-2.jpeg" alt="барбер делает кантик" width="270" />
             </li>
           </ul>
-          <p class="about">О нас</p>
-          <h2 class="about-title">Лучший Барбершоп твоего города</h2>
-          <p class="about-paragraf-one">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
-          </p>
-          <p class="about-paragraf-two">
-            Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда
-            ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
-            которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
-            каждого, кто к нам приходит!
-          </p>
-          <button type="button" class="button">онлайн-запись</button>
+          <div class="flex-about">
+            <p class="about">О нас</p>
+            <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+            <p class="about-paragraf-one">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </p>
+            <p class="about-paragraf-two">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+              когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+              команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button type="button" class="button-two">онлайн-запись</button>
+          </div>
         </div>
       </section>
       <section id="price">
@@ -125,7 +124,7 @@
               <p class="paragraf">от 200 грн.</p>
             </li>
           </ul>
-          <button type="button" class="button">онлайн-запись</button>
+          <button type="button" class="button white">онлайн-запись</button>
         </div>
       </section>
       <section>
@@ -197,7 +196,7 @@
       <section>
         <div class="container">
           <p class="galery-paragraf">На латинском языке “барба” означает “борода”</p>
-          <h2 hidden>Галерея</h2>
+          <h2 class="visually-hidden">Галерея</h2>
           <ul class="galery-list list">
             <li class="galery-item">
               <img
