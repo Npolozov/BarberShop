@@ -32,7 +32,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+span {
   padding: 0;
   margin: 0;
 }
@@ -146,8 +147,8 @@ img {
   background-color: tomato;
 }
 .hero-content {
-  width: 525px;
-  margin: 250px 450px 96px 206px;
+  /* width: 525px; */
+  padding: 208px 452px 206px 189px;
 }
 .hero-salon {
   font-weight: 600;
@@ -176,6 +177,7 @@ img {
 /* Photo */
 .flex-photo-list {
   display: flex;
+  padding-top: 139px;
   background-color: aqua;
 }
 
@@ -242,7 +244,19 @@ img {
 
 /* price and service */
 
+#price {
+  padding-top: 101px;
+  padding-bottom: 130px;
+}
+
+.flex-price-paragraf {
+  display: flex;
+  margin-bottom: 50px;
+  background-color: teal;
+}
+
 .price-paragraf {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
@@ -250,6 +264,7 @@ img {
   color: var(--special-color);
 }
 .price-title {
+  margin-bottom: 44px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -258,10 +273,18 @@ img {
   letter-spacing: 0.05em;
 }
 .price-list {
+  display: flex;
+  flex-direction: column;
+  width: 585px;
+  margin: 30px 40px;
 }
 .price-item {
+  display: flex;
+  justify-content: space-between;
 }
-.paragraf {
+
+.paragraf,
+.price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
@@ -269,29 +292,79 @@ img {
   color: var(--special-color);
 }
 
+.button-white-two {
+  margin: 0 auto;
+  display: block;
+  padding: 12px 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
 /* Service */
 
+/* .flex-service {
+  padding-top: 141px;
+  padding-bottom: 137px;
+} */
+
 .service-list {
+  margin-left: 100px;
+  margin-right: 75px;
+  background-color: blue;
 }
+
+.flex-service {
+  display: flex;
+}
+
+.flex-item {
+  display: flex;
+}
+
+.flex-item .service-item + .service-item {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
 .service-item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 20px;
 }
+
 .service-number {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
-  /* text-align: center; */
   letter-spacing: 0.05em;
+  /* text-align: center; */
 }
 .service-paragraf {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
-  /* text-align: center; */
 }
 
 /* best barber */
 
+.flex-best {
+  margin-left: 56px;
+  margin-right: 100px;
+  background-color: aqua;
+}
+
 .bestbarber-paragraf {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
@@ -299,8 +372,8 @@ img {
   color: var(--primary-accent-color);
 }
 .bestbarber-title {
-  font-family: 'Raleway';
-  font-style: normal;
+  margin-bottom: 20px;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.2;
@@ -312,6 +385,7 @@ img {
   font-size: 18px;
   line-height: 1.7;
   letter-spacing: 0.02em;
+  max-width: 500px;
 }
 
 /* Masters */
