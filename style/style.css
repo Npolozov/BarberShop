@@ -48,15 +48,18 @@ span {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid;
 }
 
 img {
   display: block;
 }
 
-/* Header */
+/* ------------------------Header------------------- */
 
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .main-nav {
@@ -121,13 +124,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Hero */
-.social-list {
-}
-
-/* .flex-hero {
-  padding-bottom: 140px;
-} */
+/* -------------------------------Hero---------------------- */
 .social-link {
   font-weight: 600;
   font-size: 11px;
@@ -144,10 +141,10 @@ img {
 }
 
 #about {
-  background-color: tomato;
 }
 .hero-content {
-  padding: 208px 452px 206px 189px;
+  background-color: aqua;
+  padding: 272px 96px 206px 96px;
 }
 .hero-salon {
   font-weight: 600;
@@ -171,6 +168,7 @@ img {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.02em;
+  max-width: 400px;
 }
 
 /* Photo */
@@ -189,7 +187,7 @@ img {
   margin-left: 30px;
 }
 
-/* about barbershop */
+/* ---------------------------about barbershop -------------------------  */
 .flex-about {
   margin-left: 64px;
 }
@@ -237,11 +235,11 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #303030;
-  /* border: 1px solid #ff6c00; */
+  border: 1px solid #ff6c00;
   border-radius: 25px;
 }
 
-/* price and service */
+/* -------------------------price and service ------------------ */
 
 #price {
   padding-top: 101px;
@@ -275,7 +273,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 585px;
-  margin: 30px 40px;
+  padding: 30px 40px;
 }
 .price-item {
   display: flex;
@@ -308,11 +306,6 @@ img {
 }
 
 /* Service */
-
-/* .flex-service {
-  padding-top: 141px;
-  padding-bottom: 137px;
-} */
 
 .service-list {
   margin-left: 100px;
