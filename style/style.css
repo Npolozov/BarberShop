@@ -286,16 +286,12 @@ img {
   color: var(--another-tittle-color);
 }
 .price-list-one {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   width: 585px;
   padding: 30px 40px;
 }
 
 .price-list-two {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   width: 585px;
   padding: 30px 40px;
