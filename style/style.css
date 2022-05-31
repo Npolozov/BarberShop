@@ -60,12 +60,18 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
 }
 .header-logo {
   margin-right: 70px;
@@ -129,6 +135,7 @@ img {
 
 .social-list {
   width: 100px;
+  flex-direction: ;
 }
 .social-link {
   font-weight: 600;
@@ -137,7 +144,6 @@ img {
   color: var(--primary-accent-color);
   text-decoration: none;
   letter-spacing: 0.2em;
-  /* transform: rotate(-89.83deg); */
 }
 
 .social-link:hover,
@@ -146,6 +152,7 @@ img {
 }
 
 #about {
+  position: relative;
 }
 
 .hero-content {
@@ -552,15 +559,16 @@ img {
 
 .flex-contact {
   display: flex;
+  padding: 130px 0;
 }
 
 .online {
   flex-grow: 1;
-  margin-top: 130px;
+  outline: 1px solid teal;
 }
 #contact {
   flex-grow: 1;
-  margin-top: 130px;
+  outline: 1px solid teal;
 }
 
 .online-text {
@@ -572,6 +580,8 @@ img {
   /* color: var(--another-tittle-color); */
 }
 .contact-text {
+  margin-left: 100px;
+  margin-bottom: 40px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 42px;
@@ -580,11 +590,15 @@ img {
   /* color: var(--another-tittle-color); */
 }
 
-.address .address-list {
+.address-list {
+  margin-left: 100px;
 }
 .address-item {
+  width: 270px;
 }
 .address {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -594,6 +608,8 @@ img {
   text-decoration: none;
 }
 .address-tel {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -612,6 +628,11 @@ img {
 }
 
 /* Time work */
+
+.time {
+  margin-left: 100px;
+  margin-top: 70px;
+}
 .work {
   font-weight: 600;
   font-size: 11px;
