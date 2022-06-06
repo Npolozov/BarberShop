@@ -61,7 +61,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -399,6 +399,7 @@ img {
 }
 
 .service-item {
+  position: relative;
   background-color: #f7f7f7;
   width: 170px;
   height: 133px;
@@ -428,14 +429,25 @@ img {
   justify-content: center;
 }
 
-.service-number::after {
+.plus {
+  position: absolute;
+  top: 27px;
+  right: 52px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--text-hover);
+}
+
+/* .service-number::after {
   content: '+';
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
   color: #ff6c00;
-}
+} */
 .service-paragraf {
   width: 130px;
   height: 30px;
