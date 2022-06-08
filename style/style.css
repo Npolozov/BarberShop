@@ -62,10 +62,8 @@ img {
   padding-bottom: 32px;
   position: absolute;
   z-index: 1;
-  top: 0;
-  left: 0;
+
   width: 100%;
-  height: 100%;
 }
 
 .main-nav {
@@ -678,7 +676,8 @@ img {
 }
 
 .address {
-  display: block;
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
@@ -687,9 +686,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--special-color);
   text-decoration: none;
+  transition: color 250ms linear;
 }
 .address-tel {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
@@ -698,14 +699,32 @@ img {
   letter-spacing: 0.02em;
   color: var(--special-color);
   text-decoration: none;
+  transition: color 250ms linear;
 }
 .address-mail {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: var(--special-color);
+  transition: color 250ms linear;
+}
+
+.address:hover,
+.address:focus,
+.address-tel:hover,
+.address-tel:focus,
+.address-mail:hover,
+.address-mail:focus {
+  color: var(--text-hover);
+}
+
+.contact-icon {
+  fill: currentColor;
+  margin-right: 20px;
 }
 
 /* Time work */
@@ -764,21 +783,30 @@ footer {
 .footer-list {
   display: flex;
   margin-left: auto;
-}
-.footer-item {
+  align-items: center;
 }
 
 .footer-item + .footer-item {
   margin-left: 40px;
 }
+
+.footer-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  margin-right: 40px;
+}
+
 .social {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: block;
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.4;
+  line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--primary-accent-color);
+  text-decoration: none;
+  transition: color 250ms linear;
 }
 
 .social:hover,
