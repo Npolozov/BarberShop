@@ -31,7 +31,7 @@
           </ul>
         </nav>
         <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
-        <button type="button" class="button">онлайн-запись</button>
+        <button type="button" class="button" data-modal-open>онлайн-запись</button>
       </div>
     </header>
     <!-- Hero -->
@@ -391,6 +391,11 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close>x</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
