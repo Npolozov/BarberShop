@@ -59,9 +59,12 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
-  position: absolute;
-
-  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(24, 27, 37, 0.4);
+  z-index: 10;
+  backdrop-filter: blur(10px);
 }
 
 .main-nav {
@@ -175,7 +178,6 @@ img {
 .social-link:focus {
   color: var(--text-hover);
 }
-
 
 .hero-content {
   background-color: #303030;
@@ -578,7 +580,6 @@ img {
 .masters-soc-list {
   display: flex;
   justify-content: center;
-
 }
 
 .masters-soc-item {
@@ -598,9 +599,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--primary-text-color);
-  transition: color 250ms linear,
-  background-color 250ms linear,
-  border-radius 250ms linear
+  transition: color 250ms linear, background-color 250ms linear, border-radius 250ms linear;
 }
 
 .masters-soc-link:hover,
@@ -706,7 +705,7 @@ img {
 }
 
 .contact-icon-address {
-  position: absolute; 
+  position: absolute;
   left: 104px;
   top: 5px;
 }
@@ -837,7 +836,6 @@ footer {
   color: var(--text-hover);
 }
 
-
 .backdrop {
   width: 100%;
   height: 100%;
@@ -845,6 +843,7 @@ footer {
   position: fixed;
   top: 0;
   transition: opacity 300ms, visibility 300ms;
+  z-index: 20;
 }
 
 .backdrop.is-hidden .modal {
@@ -876,7 +875,6 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 0;
-
 }
 
 .is-hidden {
