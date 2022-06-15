@@ -332,6 +332,38 @@
         <div class="container">
           <section class="online">
             <h2 class="online-text">Онлайн-запись</h2>
+            <form class="online-form">
+              <div class="input-field">
+                <input
+                  type="text"
+                  class="online-input"
+                  name="online-name"
+                  id="online-name"
+                  placeholder=" "
+                />
+                <label for="online-name" class="online-label">Имя*</label>
+              </div>
+              <div class="input-field">
+                <input
+                  type="tel"
+                  class="online-input"
+                  name="online-tel"
+                  id="online-tel"
+                  placeholder=" "
+                />
+                <label for="online-tel" class="online-label">Телефон*</label>
+              </div>
+              <div class="text-field">
+                <textarea
+                  name="online-mess"
+                  id="online-mess"
+                  class="online-mess"
+                  placeholder=" "
+                ></textarea>
+                <label for="online-mess" class="online-label">Сообщение</label>
+              </div>
+              <button type="submit" class="online-btn btn" data-modal-open>отправить</button>
+            </form>
           </section>
           <section id="contact">
             <h2 class="contact-text">Контакты</h2>
