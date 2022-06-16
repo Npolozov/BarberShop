@@ -62,9 +62,17 @@ img {
   position: fixed;
   top: 0;
   width: 100vw;
-  /* background-color: rgba(24, 27, 37, 0.4); */
   z-index: 10;
-  /* backdrop-filter: blur(10px); */
+  transition: background-color 250ms linear, backdrop-filter 250ms linear;
+}
+
+.js-no-transparency {
+  background-color: rgba(24, 27, 37, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.changeColor {
+  background-color: rgba(30, 32, 35, 0.9);
 }
 
 .header .main-nav {
@@ -649,6 +657,7 @@ img {
   background-image: url(../img/contact.png);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: calc(50% - 15px);
 }
 
 .wrap .container {
@@ -658,7 +667,6 @@ img {
 .online {
   padding: 130px 0 130px 0;
   width: calc(50% + 15px);
-
   padding-right: 40px;
 }
 .online-text {
@@ -760,9 +768,9 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-#contact {
+.contact {
+  width: calc (50% - 15px);
   padding: 130px 0 130px 0;
-  width: calc(50% - 15px);
 }
 
 .contact-text {
@@ -800,6 +808,8 @@ textarea::-webkit-scrollbar-thumb {
   position: absolute;
   left: 104px;
   top: 5px;
+  fill: transparent;
+  stroke: currentColor;
 }
 
 .address-tel {
@@ -838,7 +848,8 @@ textarea::-webkit-scrollbar-thumb {
 
 .contact-icon {
   margin-right: 20px;
-  fill: currentColor;
+  fill: transparent;
+  stroke: currentColor;
 }
 
 /* Time work */
