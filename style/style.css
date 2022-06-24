@@ -379,7 +379,19 @@ img {
 .price-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 20px;
+}
+
+.price-item::before {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.paragraf {
+  order: -1;
 }
 
 .price-item:last-child {
