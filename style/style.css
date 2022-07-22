@@ -210,6 +210,7 @@ img {
 
 .hero-salon::before {
   content: '';
+  font-size: 40px;
   width: 60px;
   height: 1px;
   background-color: currentColor;
@@ -1000,4 +1001,242 @@ footer {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @include desktop {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+}
+
+.header .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_buton {
+  @include tablet {
+    display: none;
+  }
+
+  width: 160px;
+}
+
+.nav_list {
+  display: none;
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+.hero .conteiner {
+  display: flex;
+}
+
+.hero_circle {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  background-color: #ffa5ba;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+
+  @include tablet {
+    top: 43px;
+    left: 248px;
+    width: 335px;
+    height: 333px;
+  }
+
+  @include desktop {
+    top: 54px;
+    left: 516px;
+    width: 534px;
+    height: 534px;
+  }
+}
+
+.picture_ice {
+  position: absolute;
+  top: 92px;
+  left: 117px;
+
+  @include tablet {
+    top: 80px;
+    left: 322px;
+  }
+
+  @include desktop {
+    top: 118px;
+    left: 630px;
+  }
+}
+
+.pictute_milk {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.picture_girl {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+}
+
+.title_conteiner {
+  position: absolute;
+
+  @include tablet {
+    top: 102px;
+  }
+
+  @include desktop {
+    top: 147px;
+  }
+}
+
+.hero_title {
+  width: 218px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 218px;
+    font-size: 25px;
+  }
+
+  @include desktop {
+    width: 277px;
+    font-size: 38px;
+  }
+}
+
+.nav_item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.nav_link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $text-white-color;
+}
+.photo-conteiner {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    bottom: 60px;
+  }
+}
+
+.paragraf_ice {
+  font-family: 'DM Sans';
+  font-style: normal;
+  width: 114px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $text-white-color;
+  margin-bottom: 7px;
+
+  @include desktop {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+
+.button_paragraf {
+  border-radius: 50%;
+  border: none;
+  width: 18px;
+  height: 18px;
+  background-color: $text-white-color;
+}
+
+.list_conteiner {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  position: absolute;
+  top: 94px;
+  right: 42px;
+}
+
+.list_paragraf {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $text-white-color;
+}
+
+.list_number {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: relative;
+    font-family: 'Titan One';
+    font-style: normal;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $accent-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 16px;
+      height: 16px;
+      right: 5px;
+      border-radius: 50%;
+      background-color: $text-white-color;
+    }
+  }
 }
